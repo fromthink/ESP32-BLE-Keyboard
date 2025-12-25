@@ -84,7 +84,7 @@ static const uint8_t _hidReportDescriptor[] = {
   USAGE(1),           0xEA,          //   USAGE (Volume Decrement)    ; bit 6: 64
   USAGE(2), 0x42, 0x00, // Usage (Stand By / Sleep)      ; bit 7: 128
   USAGE(1),           0x30,  // Usage (System Sleep)          ; bit 0: 1
-  USAGE(1),           0x30,  // Usage (System Power Down)     ; bit 1: 2
+  USAGE(1),           0x32,  // Usage (System Power Down)     ; bit 1: 2
   USAGE(2), 0x94, 0x01, // Usage (My Computer)           ; bit 2: 4
   USAGE(2), 0x92, 0x01, // Usage (Calculator)            ; bit 3: 8
   USAGE(2), 0x2A, 0x02, // Usage (WWW Bookmarks)         ; bit 4: 16
