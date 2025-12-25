@@ -77,8 +77,8 @@ static const uint8_t _hidReportDescriptor[] = {
   REPORT_COUNT(1),    0x10,          //   REPORT_COUNT (16)
   USAGE(1),           0xB5,          //   USAGE (Scan Next Track)     ; bit 0: 1
   USAGE(1),           0xB6,          //   USAGE (Scan Previous Track) ; bit 1: 2
-  USAGE(1),           0xB7,          //   USAGE (Stop)                ; bit 2: 4
-  USAGE(1),           0xCD,          //   USAGE (Play/Pause)          ; bit 3: 8
+  USAGE(1),           0x30,          //   USAGE (Power)                ; bit 2: 4
+  USAGE(1),           0x32,          //   USAGE (Sleep)          ; bit 3: 8
   USAGE(1),           0xE2,          //   USAGE (Mute)                ; bit 4: 16
   USAGE(1),           0xE9,          //   USAGE (Volume Increment)    ; bit 5: 32
   USAGE(1),           0xEA,          //   USAGE (Volume Decrement)    ; bit 6: 64
