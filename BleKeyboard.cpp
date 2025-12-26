@@ -62,7 +62,7 @@ static const uint8_t _hidReportDescriptor[] = {
   LOGICAL_MAXIMUM(1), 0xE7,          //   LOGICAL_MAXIMUM(0xE7) ; 101 keys
   USAGE_PAGE(1),      0x07,          //   USAGE_PAGE (Kbrd/Keypad)
   USAGE_MINIMUM(1),   0x00,          //   USAGE_MINIMUM (0)
-  USAGE_MAXIMUM(1),   0xE7,          //   USAGE_MAXIMUM (0xE7)
+  USAGE_MAXIMUM(1),   0x65,          //   USAGE_MAXIMUM (0x65)
   HIDINPUT(1),        0x00,          //   INPUT (Data,Array,Abs,No Wrap,Linear,Preferred State,No Null Position)
   END_COLLECTION(0),                 // END_COLLECTION
   // ------------------------------------------------- Media Keys
@@ -87,11 +87,10 @@ static const uint8_t _hidReportDescriptor[] = {
   USAGE(2),           0x92, 0x01,    //   Usage (Calculator)  ; bit 1: 2
   USAGE(2),           0x2A, 0x02,    //   Usage (WWW fav)     ; bit 2: 4
   USAGE(2),           0x21, 0x02,    //   Usage (WWW search)  ; bit 3: 8
-  USAGE(2),           0x26, 0x02,    //   Usage (WWW stop)           ; bit 4: 16
-  USAGE_PAGE(1),      0x01,          //   USAGE_PAGE (Generic Desktop)
-  USAGE(1),           0x81,          //   Usage (System Power Down)  ; bit 5: 32
-  USAGE(1),           0x82,          //   Usage (System Sleep)       ; bit 6: 64
-  USAGE(1),           0x83,          //   Usage (System Wake Up)     ; bit 7: 128
+  USAGE(2),           0x26, 0x02,    //   Usage (WWW stop)    ; bit 4: 16
+  USAGE(2),           0x24, 0x02,    //   Usage (WWW back)    ; bit 5: 32
+  USAGE(2),           0x83, 0x01,    //   Usage (Media sel)   ; bit 6: 64
+  USAGE(2),           0x8A, 0x01,    //   Usage (Mail)        ; bit 7: 128
   HIDINPUT(1),        0x02,          //   INPUT (Data,Var,Abs,No Wrap,Linear,Preferred State,No Null Position)
   END_COLLECTION(0)                  // END_COLLECTION
 };
